@@ -1,0 +1,95 @@
+<!--DECLARES THE DOCUMENT TYPE AS HTML-->
+<!DOCTYPE html>
+<!--SETS DEFAULT DOCUMENT LANGUAGE TO ENGLISH-->
+<html lang="en">
+
+  <!--HEAD SECTION CONTAINING TITLE, METADATA, STYLESHEETS AND FAVICON-->
+  <head>
+    <title>Code Editor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css" media="(max-width: 768px)">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  </head>
+
+  <!--BODY TAGS CONTAIN ALL THE VIEWABLE CONTENT ON THE PAGE-->
+  <body>
+
+    <!--MAIN SECTION CONTAINS THE APPLICATION-->
+    <main>
+      <section class="container">
+
+        <!--INPUT PANELS WRAPPED IN FLEX CONTAINER-->
+        <div class="top-row">
+
+          <!--HTML INPUT FIELD-->
+          <div class="input-panel">
+            <label for="html-code">HTML</label>
+            <div class="editor-container">
+              <div class="line-numbers" aria-hidden="true"></div>
+              <textarea id="html-code" class="html-input" placeholder="Write HTML here..."></textarea>
+            </div>
+          </div>
+
+          <!--CSS INPUT FIELD-->
+          <div class="input-panel">
+            <label for="css-code">CSS</label>
+            <div class="editor-container">
+              <div class="line-numbers" aria-hidden="true"></div>
+              <textarea id="css-code" class="css-input" placeholder="Write CSS here..."></textarea>
+            </div>
+          </div>
+
+          <!--JAVASCRIPT INPUT FIELD-->
+          <div class="input-panel">
+            <label for="js-code">JAVASCRIPT</label>
+            <div class="editor-container">
+              <div class="line-numbers" aria-hidden="true"></div>
+              <textarea id="js-code" class="js-input" placeholder="Write JAVASCRIPT here..."></textarea>
+            </div>
+          </div>
+
+        </div> <!-- End of .top-row -->
+
+        <!--CONTROL BAR: RUN BUTTON + AUTO-RUN TOGGLE + SAVE/LOAD-->
+        <div class="controls">
+          <button id="run-Btn" class="run-button">RUN</button>
+
+          <div class="auto-run-toggle">
+            <label>
+              <input type="checkbox" id="auto-run-toggle">
+              Auto-Run
+            </label>
+          </div>
+
+          <button id="save-Btn" class="run-button">SAVE</button>
+          <button id="load-Btn" class="run-button">LOAD</button>
+        </div>
+
+        <!--OUTPUT PANEL CONTAINING PREVIEW AND CONSOLE-->
+        <div class="output-panel">
+
+          <!--PREVIEW PANEL WITH IFRAME-->
+          <div class="preview-panel">
+            <iframe id="preview"></iframe>
+          </div>
+
+          <!--MINI CONSOLE FOR JS OUTPUT-->
+          <div class="console-output" id="console-output">
+            <p><strong>Console:</strong></p>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <!--FOOTER SECTION FOR COPYRIGHT OR FUTURE INFORMATION-->
+    <footer></footer>
+
+    <!--EXTERNAL SCRIPT FILE-->
+    <script src="script.js"></script>
+  </body>
+</html>
+
