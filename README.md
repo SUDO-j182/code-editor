@@ -43,6 +43,7 @@ Small details like auto-run toggles, line syncing, and redirecting console outpu
 - Add basic error logging to the preview console  
 - Include optional templates/snippets  
 - Improve mobile responsiveness and scaling
+- Use Pixel Editor to create custom favicon and link to html
 
 ---
 
