@@ -49,7 +49,7 @@ Small details like auto-run toggles, line syncing, and redirecting console outpu
 ## Live Demo
 
 Try it on GitHub Pages:  
-[https://your-username.github.io/terminal-code-editor](https://your-username.github.io/terminal-code-editor)
+[https://your-username.github.io/terminal-code-editor](https://sudo-j182.github.io/code-editor/)
 
 ---
 
